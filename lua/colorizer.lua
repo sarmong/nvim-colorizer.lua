@@ -566,7 +566,7 @@ end
 -- @tparam[opt] {[string]=string} default_options Default options to apply for the filetypes enable.
 -- @usage require'colorizer'.setup()
 local function setup(filetypes, user_default_options)
-	if not nvim.o.termguicolors then
+	if not vim.o.termguicolors then
 		nvim.err_writeln("&termguicolors must be set")
 		return
 	end
